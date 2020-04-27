@@ -1,0 +1,146 @@
+18:40:45 **** Incremental Build of configuration Debug for project SW_Layered_Project ****
+make all 
+Building file: ../App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"App.d" -MT"App.o" -c -o "App.o" "../App.c"
+In file included from ../Micro_Config.h:22,
+                 from ../App.c:17:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../App.c
+ 
+Building file: ../Button.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Button.d" -MT"Button.o" -c -o "Button.o" "../Button.c"
+Finished building: ../Button.c
+ 
+Building file: ../Det.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Det.d" -MT"Det.o" -c -o "Det.o" "../Det.c"
+Finished building: ../Det.c
+ 
+Building file: ../Dio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Dio.d" -MT"Dio.o" -c -o "Dio.o" "../Dio.c"
+../Dio.c: In function 'Dio_Init':
+../Dio.c:58: warning: assignment discards qualifiers from pointer target type
+../Dio.c: In function 'Dio_WriteChannel':
+../Dio.c:111: warning: assignment discards qualifiers from pointer target type
+../Dio.c:113: warning: assignment discards qualifiers from pointer target type
+../Dio.c:115: warning: assignment discards qualifiers from pointer target type
+../Dio.c:117: warning: assignment discards qualifiers from pointer target type
+../Dio.c: In function 'Dio_ReadChannel':
+../Dio.c:187: warning: assignment discards qualifiers from pointer target type
+../Dio.c:189: warning: assignment discards qualifiers from pointer target type
+../Dio.c:191: warning: assignment discards qualifiers from pointer target type
+../Dio.c:193: warning: assignment discards qualifiers from pointer target type
+../Dio.c:211: warning: control reaches end of non-void function
+../Dio.c: In function 'Dio_FlipChannel':
+../Dio.c:303: warning: assignment discards qualifiers from pointer target type
+../Dio.c:304: warning: assignment discards qualifiers from pointer target type
+../Dio.c:306: warning: assignment discards qualifiers from pointer target type
+../Dio.c:307: warning: assignment discards qualifiers from pointer target type
+../Dio.c:309: warning: assignment discards qualifiers from pointer target type
+../Dio.c:310: warning: assignment discards qualifiers from pointer target type
+../Dio.c:312: warning: assignment discards qualifiers from pointer target type
+../Dio.c:313: warning: assignment discards qualifiers from pointer target type
+../Dio.c:333: warning: control reaches end of non-void function
+Finished building: ../Dio.c
+ 
+Building file: ../Dio_PBcfg.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Dio_PBcfg.d" -MT"Dio_PBcfg.o" -c -o "Dio_PBcfg.o" "../Dio_PBcfg.c"
+../Dio_PBcfg.c:45: warning: missing braces around initializer
+../Dio_PBcfg.c:45: warning: (near initialization for 'Dio_Configuration.Channels')
+Finished building: ../Dio_PBcfg.c
+ 
+Building file: ../Gpt.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Gpt.d" -MT"Gpt.o" -c -o "Gpt.o" "../Gpt.c"
+In file included from ../Micro_Config.h:22,
+                 from ../Gpt.h:15,
+                 from ../Gpt.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Gpt.c: In function 'Timer0_setCallBack':
+../Gpt.c:35: warning: function return types not compatible due to 'volatile'
+Finished building: ../Gpt.c
+ 
+Building file: ../Led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Led.d" -MT"Led.o" -c -o "Led.o" "../Led.c"
+../Led.c: In function 'LED_toggle':
+../Led.c:35: warning: unused variable 'state'
+Finished building: ../Led.c
+ 
+Building file: ../Os.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Os.d" -MT"Os.o" -c -o "Os.o" "../Os.c"
+In file included from ../Micro_Config.h:22,
+                 from ../Gpt.h:15,
+                 from ../Os.c:16:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Os.c
+ 
+Building file: ../Port.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Port.d" -MT"Port.o" -c -o "Port.o" "../Port.c"
+../Port.c: In function 'Port_Init':
+../Port.c:60: warning: assignment discards qualifiers from pointer target type
+../Port.c:69: warning: assignment discards qualifiers from pointer target type
+../Port.c:70: warning: assignment discards qualifiers from pointer target type
+../Port.c:73: warning: assignment discards qualifiers from pointer target type
+../Port.c:74: warning: assignment discards qualifiers from pointer target type
+../Port.c:77: warning: assignment discards qualifiers from pointer target type
+../Port.c:78: warning: assignment discards qualifiers from pointer target type
+../Port.c:81: warning: assignment discards qualifiers from pointer target type
+../Port.c:82: warning: assignment discards qualifiers from pointer target type
+../Port.c: In function 'Port_SetDirection':
+../Port.c:171: warning: assignment discards qualifiers from pointer target type
+../Port.c:174: warning: assignment discards qualifiers from pointer target type
+../Port.c:177: warning: assignment discards qualifiers from pointer target type
+../Port.c:180: warning: assignment discards qualifiers from pointer target type
+../Port.c: In function 'Port_RefreshPortDirection':
+../Port.c:236: warning: assignment discards qualifiers from pointer target type
+../Port.c:239: warning: assignment discards qualifiers from pointer target type
+../Port.c:242: warning: assignment discards qualifiers from pointer target type
+../Port.c:245: warning: assignment discards qualifiers from pointer target type
+../Port.c:213: warning: unused variable 'DDR_Ptr'
+../Port.c: In function 'Port_SetPinMode':
+../Port.c:320: warning: unused variable 'DDR_Ptr'
+Finished building: ../Port.c
+ 
+Building file: ../Port_PBcfg.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Port_PBcfg.d" -MT"Port_PBcfg.o" -c -o "Port_PBcfg.o" "../Port_PBcfg.c"
+../Port_PBcfg.c:40: warning: missing braces around initializer
+../Port_PBcfg.c:40: warning: (near initialization for 'Port_Configuration.Channels')
+Finished building: ../Port_PBcfg.c
+ 
+Building file: ../Project.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Project.d" -MT"Project.o" -c -o "Project.o" "../Project.c"
+Finished building: ../Project.c
+ 
+Building target: SW_Layered_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SW_Layered_Project.map -mmcu=atmega16 -o "SW_Layered_Project.elf"  ./App.o ./Button.o ./Det.o ./Dio.o ./Dio_PBcfg.o ./Gpt.o ./Led.o ./Os.o ./Port.o ./Port_PBcfg.o ./Project.o   
+Finished building target: SW_Layered_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SW_Layered_Project.elf  >"SW_Layered_Project.lss"
+Finished building: SW_Layered_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 SW_Layered_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    4606 bytes (28.1% Full)
+(.text + .data + .bootloader)
+
+Data:        243 bytes (23.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

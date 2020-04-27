@@ -1,0 +1,52 @@
+/*
+ * Port_Cfg.h
+ *
+ *  Created on: Mar 9, 2020
+ *      Author: mauneltohamy
+ */
+
+#ifndef PORT_CFG_H_
+#define PORT_CFG_H_
+/*
+ * Module Version 1.0.0
+ */
+#define PORT_CFG_SW_MAJOR_VERSION              (1U)
+#define PORT_CFG_SW_MINOR_VERSION              (0U)
+#define PORT_CFG_SW_PATCH_VERSION              (0U)
+
+/*
+ * AUTOSAR Version 4.0.3
+ */
+#define PORT_CFG_AR_RELEASE_MAJOR_VERSION     (4U)
+#define PORT_CFG_AR_RELEASE_MINOR_VERSION     (0U)
+#define PORT_CFG_AR_RELEASE_PATCH_VERSION     (3U)
+
+/* Pre-compile option for Development Error Detect */
+#define PORT_DEV_ERROR_DETECT					(STD_ON)
+/* Pre-compile option for Version Info API */
+#define PORT_VERSION_INFO_API     	            (STD_OFF)
+
+/* Pre-compile option for Pin Direction API */
+#define PORT_SET_PIN_DIRECTION_API 				(STD_OFF)
+
+/* Pre-compile option for Pin Mode API */
+#define PORT_SET_PIN_MODE_API					(STD_OFF)
+
+/* Channel Index in the array of structures in Port_PBcfg.c */
+#define PortConf_LED_CHANNEL_ID_INDEX        (uint8)0x00
+#define PortConf_BUTTON_CHANNEL_ID_INDEX     (uint8)0x01
+
+/* Port Configured Port ID's  */
+#define PortConf_LED_PORT_NUM                (Port_PinType)20 /* PORTC pin5 */
+#define PortConf_BUTTON_PORT_NUM             (Port_PinType)26 /* PORTD pin2*/
+/* Port Configured Port Direction */
+#define PortConf_LED_DIRECTION 				 (Port_PinDirectionType)PORT_PIN_OUT
+#define PortConf_BUTTON_DIRECTION 			 (Port_PinDirectionType)PORT_PIN_IN
+/* Port Configured Port mode */
+#define PortConf_LED_MODE 					 (Port_PinModeType)PORT_PIN_MODE_DIO
+#define PortConf_BUTTON_MODE				 (Port_PinModeType)PORT_PIN_MODE_DIO
+/* Port Configured port initial level */
+#define PortConf_LED_INIT_LEVEL 			 (Port_PinInitLevelType)PORT_INIT_LEVEL_OFF
+#define PortConf_BUTTON_INIT_LEVEL			 (Port_PinInitLevelType)PORT_INIT_LEVEL_OFF
+
+#endif /* PORT_CFG_H_ */
